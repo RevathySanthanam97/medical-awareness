@@ -1,0 +1,28 @@
+.sticky-section {
+  background-color: var(--sticky-bg);
+  color: var(--color-white);
+  padding: 60px;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  gap: 40px;
+}
+.sticky-left, .sticky-right {
+  flex: 1;
+}
+.sticky-left {
+  display: flex;
+  gap: 15px;
+}
+.sticky-left p {
+  font-size: 18px;
+  line-height: 1.4em;
+}
+.sticky-left img {
+  width: 50px;
+}
+.sticky-right li {
+  font-size: 15px;
+  line-height: 1.6em;
+}

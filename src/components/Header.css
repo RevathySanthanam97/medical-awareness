@@ -1,0 +1,35 @@
+header img {
+  width: 100px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  gap: 15px;
+  text-transform: capitalize;
+}
+.plain {
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.plain::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -5px;
+  left: 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+.plain:hover {
+  color: var(--active-color-1);
+}
+.plain:hover::after {
+  border-color: var(--active-color-1);
+}

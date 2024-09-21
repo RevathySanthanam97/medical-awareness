@@ -1,0 +1,60 @@
+.banner-section {
+	position: relative;
+}
+.floating-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-59%, 17%);
+	z-index: -1;
+	animation: floating 5s 0s linear infinite;
+}
+@keyframes floating {
+	0% {
+		transform: translate(-59%, 17%);
+ }
+	50% {
+		transform: translate(-59%, 20%);
+ }
+	100% {
+		transform: translate(-59%, 17%);
+ }
+}
+.banner {
+	background-color: var(--banner-bg);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 20px;
+	margin: auto;
+	text-align: center;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+.banner h1 {
+	max-width: 75%;
+	margin: auto;
+}
+.banner p {
+	font-family: var(--font-2);
+	font-weight: 300;
+	font-size: 20px;
+	margin-top: 50px;
+	color: var(--text-color-2);
+}
+.banner-logo img {
+	width: 70px;
+	animation: scaling 1s 0s linear infinite;
+}
+@keyframes scaling {
+	0% {
+			transform: scale(1);
+ }
+	50% {
+			transform: scale(1.1);
+ }
+	100% {
+			transform: scale(1);
+ }
+}

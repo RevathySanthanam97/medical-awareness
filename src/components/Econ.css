@@ -1,0 +1,69 @@
+.econ-section {
+  display: flex;
+  gap: 160px;
+  justify-content: space-between;
+}
+
+.econ-left, .econ-right {
+  flex: 1;
+}
+
+.econ-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.econ-left h2 {
+  margin-bottom: 20px;
+}
+
+.econ-left li {
+  font-size: 15px;
+  color: var(--text-color-2);
+  padding-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.econ-left li::before {
+  content: "✔";
+  color: var(--active-color-1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.econ-left p {
+  font-size: 17px;
+  line-height: 1.65em;
+  color: var(--text-color-2);
+}
+
+.econ-right {
+  position: relative;
+}
+
+.floating-text {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: -120px;
+  width: 100px;
+  object-fit: contain;
+  transition: 0.3s;
+  animation: floatingText 5s linear infinite;
+}
+@keyframes floatingText {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
