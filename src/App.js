@@ -6,6 +6,7 @@ import { Banner } from './components/Banner';
 import { Featured } from './components/Featured';
 import { Econ } from './components/Econ';
 import { Sticky } from './components/Sticky';
+import { Gallery } from './components/Gallery';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Featured />
       <Econ />
       <Sticky />
+      <Gallery />
     </div>
   );
 }
